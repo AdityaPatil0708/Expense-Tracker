@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Manager</title>
+</head>
+<link rel="stylesheet" href="style1.css">
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="logo.svg" alt="">
+        </div>
+        <nav class="links">
+            <ul>
+                <a href="http://127.0.0.1:3000/front/index1.html">Home</a>
+                <a href="http://127.0.0.1:3000/services/html-css project/aboutus.html" target="_blank">About us</a>
+                <a href="http://127.0.0.1:3000/services/html-css%20project/expense-tracker/index.html"  target="_blank">Services</a>
+                <button class="btn">
+                    <a href="http://127.0.0.1:3000/Login/index.html" target="_blank">Login</a>
+                </button>
+            </ul>
+        </nav>
+    </header>
+    <div class="img">
+        <p>
+            <strong>Simple way</strong><br>
+            to manage personal Finances!
+            <br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button>
+                <a href="#">Download for free</a>
+            </button>
+        </p>
+        <img src="https://thumbs.dreamstime.com/b/monthly-expenses-conceptual-flat-style-vector-illustration-can-be-used-workflow-layout-template-banner-diagram-number-options-65224763.jpg"
+            alt="Not found" width="390" height="400" id="img1">
+    </div>
+
+    <div class="middle3">
+        <img src="https://moneylover.me/img/details/Transaction@4x.png" alt="" height="270" width="450" id="img2">
+        <p>
+            <strong>
+                Simple money tracker
+            </strong><br>
+            It takes seconds to record daily transactions. Put them into clear categories such
+            as Expense:Food, Shopping or Income Salary, Gift.
+        </p>
+    </div>
+    <div class="middle4">
+        <p>
+            <strong>
+                Painless budgeting
+            </strong><br>
+            It takes seconds to record daily transactions. Put them into clear and visualized <br>categories such as
+            Expense: Food, Shopping or Income: Salary, Gift.
+        </p>
+        <div>
+            <img src="https://moneylover.me/img/details/budget@4x.png" alt="" height="270" width="450" id="img2">
+        </div>
+    </div>
+
+    <div class="features">
+        <p><strong>
+                Features
+            </strong>
+            <b>
+                our Users Love
+            </b>
+        </p>
+    </div>
+    <br>
+    <div class="end1">
+
+        <div id="part1">
+            <img src="https://moneylover.me/img/features/1.svg" alt="">
+            <p>
+                <strong>
+                    Multiple devices
+                </strong><br>
+                Safely synchronize across devices <br> with Bank standard security.
+            </p>
+        </div>
+        <div id="part2">
+            <img src="https://moneylover.me/img/features/4.svg" alt="">
+            <p>
+                <strong>
+                    Saving plan
+                </strong><br>
+                Keep track on savings process <br> to meet your financial goals.
+            </p>
+        </div>
+        <div id="part3">
+            <img src="https://moneylover.me/img/features/2.svg" alt="">
+            <p>
+                <strong>
+                    Recurring transaction
+                </strong><br>
+                Get notified of recurring bills and <br> transactions before due date.
+            </p>
+        </div>
+    </div>
+
+    <footer class="foot">
+        <p>
+            &copy;
+            2024 Finworld Technologies Pvt. Ltd. All Rights Reserved
+        </p>
+        <a href="#">Privacy Policy!</a>
+
+    </footer>
+
+    <script>
+        {
+            const nav = document.querySelector(".header");
+            let lastScrollY = window.scrollY;
+
+            window.addEventListener("scroll", () => {
+                if (lastScrollY < window.scrollY) {
+                    nav.classList.add("header--hidden");
+                } else {
+                    nav.classList.remove("header--hidden");
+                }
+
+                lastScrollY = window.scrollY;
+            });
+        }
+    </script>
+</body>
+
+</html>
